@@ -1,0 +1,57 @@
+
+7Consulting
+
+
+Categorias
+	ID_Categoria
+	Nome
+
+1;Categoria1
+2;Categoria2
+3;Categoria3
+4;Categoria4
+5;Categoria5
+6;Categoria6
+7;Categoria7
+8;Categoria8
+9;Categoria9
+
+
+Add-Migration InitialDB -Context ApiCategoriaDBContext
+
+Update-Database -Context ApiCategoriaDBContext
+
+
+https://localhost:7115
+/api/Categoria
+/api/Categoria/post {"nome": "categoria99"}
+
+
+(path)C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\NodeJs
+
+npm create vite@latest
+npm i axios react-router-dom
+npm run dev
+
+rafce
+
+
+https://jsonplaceholder.typicode.com
+/posts
+
+
+https://localhost:7115/api
+/Categoria
+
+
+no terminal:
+
+git init 
+git add . 
+git commit -m "primeiro commit"
+git branch -M main 
+git remote add origin https://github.com/mhfs67/7Consulting 
+git push -u origin main 
+
+https://railway.app/dashboard
+

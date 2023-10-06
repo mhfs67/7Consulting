@@ -53,5 +53,41 @@ git branch -M main
 git remote add origin https://github.com/mhfs67/7Consulting 
 git push -u origin main 
 
-https://railway.app/dashboard
 
+AZURE / MYSQL
+=============
+Assinatura                                     Azure subscription 1
+Grupo de recursos                              deploy-7Consulting
+Nome do servidor                               api-teste-server.mysql.database.azure.com
+Nome de logon do administrador do servidor     omega
+Localização                                    Brazil Southeast
+Zona de disponibilidade                        Nenhuma preferência
+Alta disponibilidade                           Não Habilitado
+Versão MySQL                                   8.0
+Computação + armazenamento                     Intermitente, B1ms, 1 vCores, 2 GiB RAM, 20 armazenamento, IOPS de dimensionamento automático
+Período de retenção de backup (em dias)        7 dia(s)
+Aumento Automático do Armazenamento            Habilitado
+Redundância geográfica                         Não Habilitado
+
+omega / Alpha@28
+
+Server=api-teste-server.mysql.database.azure.com;Database=db_teste7consulting;Port=3306;User Id=omega;Password=Alpha@28;SSL Mode=Required
+
+var str = $"api-teste-server.mysql.database.azure.com;" +
+$"Database=db_teste7consulting;" +
+$"Port=3306;" +
+$"Uid=omega;" +
+$"Pwd=Alpha@28" + 
+$"SSL Mode=Required";
+
+
+
+https://api-categoria.azurewebsites.net/swagger/index.html
+
+
+https://categoria-ui.vercel.app/
+
+
+Clonar repositorio
+rodar npm ci pra instalar as dependencias do projeto
+rodar npm run dev para iniciar o projeto localmente

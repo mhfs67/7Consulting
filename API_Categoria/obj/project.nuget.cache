@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KGVTec1EZXWchnndmyUmEDjxIWPN8Hczo+rhpQQpoNC7v6PxmyU2zayYTpRa7nKtlRMEYwfS+HT2h/xf6WfP9g==",
+  "dgSpecHash": "GMCBp24QT8A7R/VrKGprUhS8vJarHJJHu9O0lhO11IE91eSXg2PSXdYLsdsobfqpfZzPkRHyhplnzAXSIbF2Sg==",
   "success": true,
   "projectFilePath": "D:\\VS\\Teste_7Consulting\\API_Categoria\\API_Categoria.csproj",
   "expectedPackageFiles": [
@@ -40,6 +40,8 @@
     "C:\\Users\\mhfs2\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\mhfs2\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\mhfs2\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\mhfs2\\.nuget\\packages\\mysqlconnector\\2.0.0\\mysqlconnector.2.0.0.nupkg.sha512",
+    "C:\\Users\\mhfs2\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.0\\pomelo.entityframeworkcore.mysql.6.0.0.nupkg.sha512",
     "C:\\Users\\mhfs2\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.6\\sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
     "C:\\Users\\mhfs2\\.nuget\\packages\\sqlitepclraw.core\\2.0.6\\sqlitepclraw.core.2.0.6.nupkg.sha512",
     "C:\\Users\\mhfs2\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.6\\sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",

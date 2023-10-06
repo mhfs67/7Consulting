@@ -18,32 +18,30 @@ namespace API_Categoria
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddEntityFrameworkSqlite()
-                .AddDbContext<ApiCategoriaDBContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DataBase")));
+            var str = "Server=api-teste-server.mysql.database.azure.com; Database=db_teste7consulting; Port=3306; UserId=omega; Password=Alpha@28; SSLMode=Required";
+
+            builder.Services.AddEntityFrameworkMySql()
+                .AddDbContext<ApiCategoriaDBContext>(options => options.UseMySql(str, ServerVersion.AutoDetect(str)));
 
             builder.Services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
 
-//            #region [Cors]
-//            builder.Services.AddCors();
-//            #endregion
+            builder.Services.AddCors();
 
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+ //           if (app.Environment.IsDevelopment())
+ //           {
+            app.UseSwagger();
+            app.UseSwaggerUI();
+            //           }
 
-//            #region [Cors]
-//            app.UseCors(c =>
-//            {
-//                c.AllowAnyHeader();
-//                c.AllowAnyMethod();
-//                c.AllowAnyOrigin();
-//            });
-//            #endregion
+            app.UseCors(c =>
+            {
+                c.AllowAnyHeader();
+                c.AllowAnyMethod();
+                c.AllowAnyOrigin();
+            });
 
             app.UseHttpsRedirection();
 
